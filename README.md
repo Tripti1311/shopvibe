@@ -24,16 +24,6 @@ A modern, responsive e-commerce landing page for showcasing products and service
 
 ---
 
-## 🛠️ Setup & Local Development
-1. Clone the repo:
-   ```sh
-   git clone https://github.com/your-username/shopvibe.git
-   cd shopvibe
-   ```
-2. Open `index.html` in your browser.
-
----
-
 ## 🤖 AI Tools Used
 - OpenAI GPT-4 (for code suggestions)
 
@@ -41,6 +31,5 @@ A modern, responsive e-commerce landing page for showcasing products and service
 
 ## 📋 Credits
 - All video and image assets are for demo purposes only.
-- UI/UX inspired by [cheerful-fenglisu-848390.netlify.app](https://cheerful-fenglisu-848390.netlify.app/)
 
 ---
