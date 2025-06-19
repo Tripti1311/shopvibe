@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Battle E-Commerce</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body>
+  <!-- Loader (CSS/JS animated) -->
+  <div id="loader" class="loader-overlay" aria-label="Loading" role="status">
+    <video src="assets/loader.mp4" autoplay loop muted playsinline class="loader-bg"></video>
+    <div class="ring-loader">
+      <div class="ring"></div>
+      <div class="ring-dot"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">ShopVibe</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#stats">Stats</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+  </nav>
+
+  <!-- Hero Section (clean, no video background) -->
+  <section id="hero" class="section hero-section" aria-labelledby="hero-heading">
+    <div class="hero-overlay"></div>
+    <div class="hero-content center-content">
+      <h1 id="hero-heading">Discover the Future of Shopping</h1>
+      <a href="#products" id="shop-now-btn" class="cta-btn ripple-effect">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Parallax Section -->
+  <section class="section parallax-section">
+    <div class="parallax-bg"></div>
+    <div class="parallax-content">
+      <h2>Immersive Parallax Experience</h2>
+      <p>Scroll to see the magic of parallax in action!</p>
+    </div>
+  </section>
+
+  <!-- Product Carousel/Slider -->
+  <section id="products" class="section products-section">
+    <h2>Featured Products</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn prev">&#8592;</button>
+      <div class="carousel-track">
+        <div class="product-card striking-highlight pop-up">
+          <div class="product-img"></div>
+          <h3>Smart Card Set</h3>
+          <p>Modern, secure, and stylish cards for every need.</p>
+          <button class="buy-btn ripple-effect">Buy Now</button>
+        </div>
+        <div class="product-card pop-up">
+          <div class="product-img product2"></div>
+          <h3>Showcase Speaker</h3>
+          <p>Experience sound like never before with our new range.</p>
+          <button class="buy-btn ripple-effect">Buy Now</button>
+        </div>
+        <div class="product-card pop-up">
+          <div class="product-img product3"></div>
+          <h3>Service Pro</h3>
+          <p>All-in-one service solution for your business needs.</p>
+          <button class="buy-btn ripple-effect">Buy Now</button>
+        </div>
+        <div class="product-card pop-up">
+          <div class="product-img product4"></div>
+          <h3>Pink Kitty Mug</h3>
+          <p>Cute, durable, and perfect for your morning coffee.</p>
+          <button class="buy-btn ripple-effect">Buy Now</button>
+        </div>
+        <div class="product-card pop-up">
+          <div class="product-img product5"></div>
+          <h3>Floral Phone Case</h3>
+          <p>Protect your phone in style with this floral case.</p>
+          <button class="buy-btn ripple-effect">Buy Now</button>
+        </div>
+        <div class="product-card pop-up">
+          <div class="product-img product6"></div>
+          <h3>Chic Sunglasses</h3>
+          <p>Trendy, UV-protected, and perfect for sunny days.</p>
+          <button class="buy-btn ripple-effect">Buy Now</button>
+        </div>
+      </div>
+      <button class="carousel-btn next">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- Features Section with entrance/hover animation -->
+  <section id="features" class="section features-section" aria-labelledby="features-heading">
+    <h2 id="features-heading">Why Shop With Us?</h2>
+    <div class="features-grid">
+      <div class="feature-item entrance-anim">
+        <div class="feature-icon parallax-icon"></div>
+        <h4>Parallax UI</h4>
+        <p>Enjoy smooth parallax animations and engaging UI.</p>
+      </div>
+      <div class="feature-item entrance-anim">
+        <div class="feature-icon popup-icon"></div>
+        <h4>Interactive Popups</h4>
+        <p>Get instant info with scroll-triggered popups.</p>
+      </div>
+      <div class="feature-item entrance-anim">
+        <div class="feature-icon striking-icon"></div>
+        <h4>Striking Effects</h4>
+        <p>Our products stand out with unique visual effects.</p>
+      </div>
+      <div class="feature-item entrance-anim">
+        <div class="feature-icon ripple-icon"></div>
+        <h4>Ripple Buttons</h4>
+        <p>Enjoy tactile feedback with ripple-effect buttons.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll-triggered Pop-up -->
+  <div class="scroll-popup" id="scroll-popup">
+    <span>🎉 Special Offer: 20% off on your first purchase! 🎉</span>
+    <button id="close-popup">×</button>
+  </div>
+
+  <!-- Stats Section with animated counters -->
+  <section id="stats" class="section stats-section">
+    <h2>Our Impact</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <img src="assets/stats.png" alt="Stats" class="stats-img">
+      </div>
+      <div class="stat-card">
+        <img src="assets/graph.png" alt="Graph" class="graph-img">
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="12000">0</span>
+        <span class="stat-label">Happy Customers</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="350">0</span>
+        <span class="stat-label">Products Sold</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="98">0</span>
+        <span class="stat-label">Satisfaction (%)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Slider -->
+  <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-heading">
+    <h2 id="testimonials-heading">What Our Customers Say</h2>
+    <div class="testimonials-slider">
+      <div class="testimonial-card active">
+        <p>"Amazing service and top-notch products! Highly recommend."</p>
+        <span>- Alex</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"The parallax UI is so smooth and the deals are unbeatable."</p>
+        <span>- Priya</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Loved the interactive popups and the ripple effect on buttons!"</p>
+        <span>- Sam</span>
+      </div>
+      <button class="testimonial-btn prev">&#8592;</button>
+      <button class="testimonial-btn next">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="ripple-effect">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html> 
