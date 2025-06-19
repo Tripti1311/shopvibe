@@ -3,7 +3,7 @@
 A modern, responsive e-commerce landing page for showcasing products and services.
 
 ## 🚀 Live Demo
-[View the deployed site](https://your-username.github.io/shopvibe/)
+[View the deployed site](https://radiant-eclair-2867cf.netlify.app/)
 
 ---
 
